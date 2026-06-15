@@ -1070,6 +1070,10 @@ const style = {
                 "icon-allow-overlap": false,
                 "text-field": [
                     "concat",
+                    ["case",
+                        ["has", "rapids:name"], ["concat", ["get", "rapids:name"], "\n"],
+                        ""
+                    ],
                     "Class: ",
                     [
                         "case",
@@ -1112,6 +1116,10 @@ const style = {
                 "icon-allow-overlap": false,
                 "text-field": [
                     "concat",
+                    ["case",
+                        ["has", "name"], ["concat", ["get", "name"], "\n"],
+                        ""
+                    ],
                     "Class: ",
                     [
                         "case",

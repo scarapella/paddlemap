@@ -1094,6 +1094,48 @@ const style = {
                 "icon-opacity": 0.8,
                 "text-opacity": 0.8
             }
+        },
+        {
+            "id": "rapids-points",
+            "type": "symbol",
+            "source": "trails",
+            "source-layer": "trail_poi",
+            "minzoom": 12,
+            "filter": 
+                ["==", ["get", "waterway"], "rapids"]
+            ,
+            "layout": {
+                "symbol-placement": "point",
+                "symbol-spacing": 70,
+                "icon-image": "waterfall",
+                "icon-size": 0.7,
+                "icon-allow-overlap": false,
+                "text-field": [
+                    "concat",
+                    "Class: ",
+                    [
+                        "case",
+                        ["!", ["has", "rapids"]], "?",
+                        ["get", "rapids"]
+                    ]
+                ],
+                "text-optional": true,
+                "text-line-height": 1.1,
+                "text-font": ["Americana-Regular"],
+                "text-padding": 5,
+                "text-offset": [0, 1.2],
+                "text-size": 10,
+                "text-anchor": "top",
+                "text-allow-overlap": false
+            },
+            "paint": {
+                "text-color": "#426395",
+                "text-halo-width": 2,
+                "text-halo-blur": 1,
+                "text-halo-color": "#ffffff",
+                "icon-opacity": 0.8,
+                "text-opacity": 0.8
+            }
         }
     ]
 };

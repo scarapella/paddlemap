@@ -79,6 +79,12 @@
         {
             "key": "rapids",
             "object_types": ["node", "way"],
+            "description": "Used to indicate rapids (including their class) as hazards to paddlers and used to influence the routing of paddlers based on their whitewater skill and preference."
+        },
+        {
+            "key": "waterway"
+            "value": "rapids",
+            "object_types": ["node"],
             "description": "Used to indicate rapids as hazards to paddlers and used to influence the routing of paddlers based on their whitewater skill and preference."
         },
         {

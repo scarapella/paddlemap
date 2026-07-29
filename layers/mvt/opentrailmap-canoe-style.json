@@ -4,7 +4,7 @@
         "trails": {
             "type": "vector",
             "tiles": [
-                "https://tiles.openstreetmap.us/vector/trails/{z}/{x}/{y}.mvt"
+                "https://paddlemap-tiles-770576063346.northamerica-northeast2.run.app/waterways/{z}/{x}/{y}.mvt"
             ],
             "minzoom": 0,
             "maxzoom": 14
@@ -41,7 +41,11 @@
             "minzoom": 5,
             "filter": [
                 "all",
-                ["has","highway"],
+                [
+                    "any",
+                    ["has","highway"],
+                    ["==", ["get", "man_made"], "pier"]
+                ],
                 ["in",["get","portage"],["literal",["yes", "permit", "designated", "permissive", "customers"]]]
             ],
             "layout": {

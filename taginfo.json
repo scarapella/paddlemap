@@ -82,6 +82,11 @@
             "description": "Used to indicate rapids as hazards to paddlers and used to influence the routing of paddlers based on their whitewater skill and preference."
         },
         {
+            "key": "rapids:name",
+            "object_types": ["way"],
+            "description": "Used to display the name of rapids."
+        },
+        {
             "key": "barrier",
             "value": "floating_boom",
             "object_types": ["way"],

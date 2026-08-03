@@ -58,6 +58,7 @@ const style = {
             "type": "vector",
             "tiles": [
                 "https://paddlemap-tiles-770576063346.northamerica-northeast2.run.app/waterways/{z}/{x}/{y}.mvt"
+                //"http://localhost:8080/waterways/{z}/{x}/{y}.mvt"
             ],
             "minzoom": 0,
             "maxzoom": 14
